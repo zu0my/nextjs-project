@@ -20,14 +20,9 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: MiSans, "MiSans Fallback", sans-serif;
+  font-family: MiSans, sans-serif;
 }
 
-@font-face {
-  font-family: MiSans Fallback;
-  src: local(Arial);
-  ascent-override: 99.8%;
-  descent-override: 26.96%;
-  line-gap-override: 0%;
-  size-adjust: 104.61%;
+button {
+  cursor: pointer;
 }

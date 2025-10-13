@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import ClientLayout from "./ui/client-layout";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -20,7 +22,9 @@ export default function RootLayout({
           <link rel="stylesheet" href="/font/font.css" />
         </noscript>
       </head>
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
     </html>
   );
 }
