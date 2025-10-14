@@ -14,7 +14,7 @@ export default function ClientLayout({ children }: ClientLayoutProps) {
   return (
     <main className="h-screen grid grid-cols-[auto_1fr] grid-rows-1">
       <Nav collapsed={collapsed} />
-      <div>
+      <div className="grid grid-rows-[auto_1fr] grid-cols-1">
         <Header collapsed={collapsed} setCollapsed={setCollapsed} />
         <div className="px-5 pt-4 pb-2">{children}</div>
       </div>

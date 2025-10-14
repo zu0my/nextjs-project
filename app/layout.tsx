@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preload" href="/font/font.css" />
+        <link rel="preload" href="/font/font.css" as="style" />
         <link rel="stylesheet" href="/font/font.css" />
         <noscript>
           <link rel="stylesheet" href="/font/font.css" />

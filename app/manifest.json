@@ -1,0 +1,7 @@
+{
+  "name": "测试通知",
+  "short_name": "测试通知",
+  "description": "测试通知",
+  "start_url": "/",
+  "display": "standalone"
+}

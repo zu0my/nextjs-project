@@ -18,6 +18,14 @@
   },
   "linter": {
     "enabled": true,
+    "includes": [
+      "**",
+      "!node_modules",
+      "!.next",
+      "!dist",
+      "!build",
+      "!**/*.js"
+    ],
     "rules": {
       "recommended": true,
       "suspicious": {
