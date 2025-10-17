@@ -2,6 +2,7 @@
   "name": "next-project",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"pnpm run dev:sw\" \"pnpm run dev:app\"",
     "dev:app": "next dev --turbopack -p 3001",
