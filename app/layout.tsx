@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import ClientLayout from "./ui/client-layout";
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         </noscript>
       </head>
       <body className={`antialiased`}>
+        <SpeedInsights />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
