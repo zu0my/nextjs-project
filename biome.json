@@ -3,7 +3,9 @@
   "vcs": {
     "enabled": true,
     "clientKind": "git",
-    "useIgnoreFile": true
+    "useIgnoreFile": true,
+    "defaultBranch": "main",
+    "root": "."
   },
   "files": {
     "ignoreUnknown": true,
@@ -16,6 +18,14 @@
   },
   "linter": {
     "enabled": true,
+    "includes": [
+      "**",
+      "!node_modules",
+      "!.next",
+      "!dist",
+      "!build",
+      "!**/*.js"
+    ],
     "rules": {
       "recommended": true,
       "suspicious": {
