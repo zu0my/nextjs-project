@@ -21,8 +21,12 @@
     ]
   },
   "dependencies": {
+    "@react-aria/button": "^3.14.2",
+    "@react-aria/interactions": "^3.25.6",
     "@vercel/speed-insights": "^1.2.0",
+    "animejs": "^4.2.2",
     "clsx": "^2.1.1",
+    "es-toolkit": "^1.40.0",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -41,5 +45,9 @@
     "simple-git-hooks": "^2.13.1",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "browserslist": [
+    "baseline widely available",
+    "not dead"
+  ]
 }
