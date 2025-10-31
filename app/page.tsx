@@ -1,20 +1,24 @@
 "use client";
 
-import Button from "@/app/ui/button";
+import { motion } from "motion/react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="h-full flex items-center justify-center">
-      <Button
-        onClick={(e) => {
-          console.info(e);
-        }}
-        onPress={(e) => {
-          console.info(e);
-        }}
+      <motion.div
+        layoutId="image"
+        className="ring-2 ring-blue-500 ring-offset-2"
       >
-        Click me
-      </Button>
+        <Image
+          src="https://placehold.co/200x300"
+          alt="random"
+          width={200}
+          height={300}
+          quality={100}
+          unoptimized
+        />
+      </motion.div>
     </div>
   );
 }
