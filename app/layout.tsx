@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-
-import Link from "next/link";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Nav } from "./ui/nav";
+import ScrollbarContainer from "./components/scrollbar-container";
 
 import "./globals.css";
 
@@ -22,14 +22,14 @@ export default function RootLayout(props: LayoutProps<"/">) {
           <link rel="stylesheet" href="/font/font.css" />
         </noscript>
       </head>
-      <body className={`antialiased w-screen h-screen`}>
+      <body className={`antialiased w-screen h-screen overflow-clip`}>
         <SpeedInsights />
-        <div className="grid grid-rows-[64px_1fr] h-full">
-          <nav className="flex items-center justify-center gap-4">
-            <Link href="/">Home</Link>
-            <Link href="/page1">Page1</Link>
-          </nav>
-          {children}
+        <div className="grid grid-cols-[240px_1fr] h-full">
+          <Nav />
+
+          <ScrollbarContainer scroll={{ y: true }}>
+            {children}
+          </ScrollbarContainer>
         </div>
       </body>
     </html>
