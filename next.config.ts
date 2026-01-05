@@ -5,10 +5,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "picsum.photos",
+        hostname: "placehold.co",
       },
     ],
   },
+  reactCompiler: true,
 };
 
 export default nextConfig;

@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres:18
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: dk
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: nextjs
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    restart: always
+
+  redis:
+    image: redis:8.4.0
+    ports:
+      - "6379:6379"
+    command: redis-server --requirepass "password"
+    volumes:
+      - redis_data:/data
+    restart: always
+
+volumes:
+  postgres_data:
+  redis_data:

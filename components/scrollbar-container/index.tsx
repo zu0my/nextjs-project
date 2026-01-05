@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "@/app/lib/utils";
+import { cn } from "@/lib/utils";
 import { useEffect, useRef, type PropsWithChildren } from "react";
 import styles from "./index.module.css";
 
